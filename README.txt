@@ -1,28 +1,7 @@
-REMIX DEFAULT WORKSPACE
+# APER Token
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Alpha Persei (Latinized from α Persei, abbreviated Alpha Per, α Per), is the Token of the Alpha Persei DAO. It is a simple ERC20 Token (using the OpenZeppelin Template), with an import of the Ownable library. We keep the option alive to move the ownership of the contract to another wallet at some point in time, when we are in possession of more secure mechanisms. 
 
-This workspace contains 3 directories:
-
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
-
-SCRIPTS
-
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
-
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
-
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
-
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+1. Deploying the contract will mint 8.111.817.543 APER, equivalent to approximate amount of humans on earth.
+2. We are working with a fixed supply no additional tokens can be minted.
+3. We did not include the option of burning tokens in the contract sufficient other methods exist.
